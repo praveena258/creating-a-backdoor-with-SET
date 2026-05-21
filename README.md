@@ -26,31 +26,95 @@ The command sudo setoolkit in the prompt gives menu with set prompt:
 
 <img width="588" height="662" alt="image" src="https://github.com/user-attachments/assets/9cc84ef6-f29b-487c-b6ec-f010d3c4fd73" />
 
+Explanation:
+
+sudo → Runs the command with administrator (root) privileges.
+setoolkit → Launches the Social Engineering Toolkit (SET).
+
+Purpose:
+SET is a penetration testing framework used for simulating social engineering attacks in authorized security labs.
+
+What happens:
+
+Opens the SET main menu
+Displays attack modules like:
+Social Engineering Attacks
+Penetration Testing Tools
+Third Party Modules
+Update SET
 
 The command sudo setoolkit in the prompt gives menu with set prompt. Select menu1 for Social Engineering Attacks:
 ## OUTPUT
 <img width="440" height="240" alt="image" src="https://github.com/user-attachments/assets/cba845eb-9920-481a-9f07-a7f289c17203" />
 
 
+Selection:
 
+1
+
+Explanation:
+Chooses the Social Engineering Attack menu.
+
+Purpose:
+Contains modules to simulate attacks such as:
+
+Credential harvesting
+Spear phishing
+Website cloning
+Payload generation (authorized testing only)
 
 It displays the following menu and select 2 for Website Attack Vectors:
 ## OUTPUT
 <img width="367" height="290" alt="image" src="https://github.com/user-attachments/assets/46118b4c-8adc-4b1a-8937-fe141e21539c" />
 
 
+Website Attack Vectors (Menu Option 2)
 
+Selection:
+
+2
+
+Explanation:
+Opens web-based attack simulation options.
+
+Purpose:
+Used for testing how users respond to cloned or simulated websites in controlled environments.
+
+Options usually include:
+
+Java Applet Attack
+Metasploit Browser Exploit
+Credential Harvester
+Web Templates
+Custom Import
 The Credential Harvester Attack Method displays the following menu. In this menu1 for Web Templates is selected:
 ## OUTPUT
 
 <img width="793" height="299" alt="image" src="https://github.com/user-attachments/assets/fd830371-b94a-4980-9568-da970284ec07" />
 
 
+Selection:
+
+3
+
+(or the corresponding menu number shown)
+
+Explanation:
+Starts the credential harvester module.
+
+Purpose:
+Creates a simulated login page to demonstrate how credential phishing works during awareness training or lab exercises.
+
+Function:
+
+Hosts a fake login page
+Collects submitted form data
+Logs test submissions locally
+
 It shows the following screen in which the ip address of the attacker need to be given which is the default value:
 ## OUTPUT
 
 <img width="738" height="577" alt="image" src="https://github.com/user-attachments/assets/a0e1f8fc-1d80-4a25-b0ee-7d1edcd91c2e" />
-
 
 
 It shows the following screen in which the option Google can be selected:
@@ -60,7 +124,19 @@ It shows the following screen in which the option Google can be selected:
 <img width="491" height="242" alt="image" src="https://github.com/user-attachments/assets/08f04a13-ca63-4320-b470-3e987707ac17" />
 
 
+SET asks:
 
+Enter the IP address for the POST back in Harvester
+
+Explanation:
+This is the IP address where the local test web server will listen.
+
+Example:
+
+192.168.1.2
+
+Purpose:
+Allows test machines on the same network to connect to the hosted simulation page.
 SET starts my Kali Linux Webserver on port 80, with the fake Google account login page. The setup is done:
 ## OUTPUT
 
@@ -73,12 +149,33 @@ In windows IE, on giving the url http://192.168.1.2 (use appropriate IP address)
 <img width="880" height="834" alt="image" src="https://github.com/user-attachments/assets/cc7aaa73-bc82-40c8-8c60-53b4f50c7342" />
 
 
+SET asks:
+
+Enter the IP address for the POST back in Harvester
+
+Explanation:
+This is the IP address where the local test web server will listen.
+
+Example:
+
+192.168.1.2
+
+Purpose:
+Allows test machines on the same network to connect to the hosted simulation page.
 SET logs the information regarding the Google credentials:
 ## OUTPUT
 <img width="891" height="165" alt="image" src="https://github.com/user-attachments/assets/fcad4171-e44f-4395-90e7-62984c7fb86f" />
 
 
+2
 
+(if Google corresponds to option 2)
+
+Explanation:
+Chooses the Google login template.
+
+Purpose:
+Loads a pre-made mock login page resembling Google for awareness demonstration.
 SET logs the information in the xml file under /root/.set directory:
 ## OUTPUT
 
